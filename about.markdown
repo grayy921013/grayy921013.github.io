@@ -3,17 +3,19 @@ title: about
 layout: page
 ---
 
-a
+an
 
-> IE Student in CUHK
+> IE Student in CUHK / Android developer / Geek
 
 who involved in 
 
-> [github](https://github.com/grayy921013)
+> [github](https://github.com/grayy921013)  
+> [stackoverflow](http://stackoverflow.com/users/3724518/vincentzhou)  
+> [v2ex](http://www.v2ex.com/member/VincentZhou)
 
 mail 
 
-> grayy921013@gmail.com
+> [grayy921013@gmail.com](mailto:grayy921013@gmail.com)
 
 
 
