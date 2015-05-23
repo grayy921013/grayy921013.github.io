@@ -16,7 +16,7 @@
   padding: 0; }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "telexregular", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   color: #555;
   background-color: #f9f9f9; }
@@ -51,7 +51,7 @@ blockquote, pre code {
   padding: 0 1em;
   border: 1px dashed #eee !important;
   border-color: #e0e0e0 !important;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
   display: block;
   overflow: auto; }
@@ -193,7 +193,7 @@ footer {
   margin-bottom: 1em; }
 
 .gist {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6; }
 
 .like-wrapper {

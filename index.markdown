@@ -4,7 +4,7 @@ layout: default
 
 <div>
   <ul class="listing">
-  {% for post in site.posts limit: 1 %}
+  {% for post in site.posts limit: 10 %}
   <article class="content">
     <section class="title">
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -22,7 +22,7 @@ layout: default
     {% endif %}
     </section>
     <section class="post">
-    {{ post.content }}
+    {{ post.summary }}
     </section>
     </article>
   {% endfor %}
@@ -31,7 +31,7 @@ layout: default
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</i>
   {% capture year %}{{ site.time | date:"%Y"}}{% endcapture %}
-  {% for post in site.posts offset:1 %}
+  {% for post in site.posts offset:10 %}
     {% capture y %}{{ post.date | date:"%Y"}}{% endcapture %}
     {% if year != y %}
     {% break %}
