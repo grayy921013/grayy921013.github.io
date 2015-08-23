@@ -62,7 +62,10 @@ code {
   border: 1px dashed #e0e0e0;
   font-family: "Ubuntu", monospace; }
 
-h1, h2 {
+h1 {
+  font-size: 1.6em; }
+
+h2 {
   font-size: 1.4em; }
 
 time {
