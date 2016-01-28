@@ -7,7 +7,7 @@ tags:
   - interview
 summary:
    腾讯SNG二面面经
---- 
+---
 
 #总结
 总得来说问题比较大，很多问到的问题没有打出来，还有一些应该能回答的问题没有回答到点子上。  
@@ -21,10 +21,10 @@ summary:
 ##2. Handler是怎么工作的？postDelayed是如何实现的？消息移除是怎么实现的？
 这个问题一面的时候问到了，当时回答的不是特别好，但是没有引起足够的重视。  
 下面摘抄几个概念：  
-  * Message 消息，理解为线程间通讯的数据单元。例如后台线程在处理数据完毕后需要更新UI，则可发送一条包含更新信息的Message给UI线程。
-  * Message Queue 消息队列，用来存放通过Handler发布的消息，按照先进先出执行。
-  * Handler Handler是Message的主要处理者，负责将Message添加到消息队列以及对消息队列中的Message进行处理。
-  * Looper 循环器，扮演Message Queue和Handler之间桥梁的角色，循环取出Message Queue里面的Message，并交付给相应的Handler进行处理。
+  * Message 消息，理解为线程间通讯的数据单元。例如后台线程在处理数据完毕后需要更新UI，则可发送一条包含更新信息的Message给UI线程。  
+  * Message Queue 消息队列，用来存放通过Handler发布的消息，按照先进先出执行。  
+  * Handler Handler是Message的主要处理者，负责将Message添加到消息队列以及对消息队列中的Message进行处理。  
+  * Looper 循环器，扮演Message Queue和Handler之间桥梁的角色，循环取出Message Queue里面的Message，并交付给相应的Handler进行处理。  
   * 线程 UI thread 通常就是main thread，而Android启动程序时会替它建立一个Message Queue。每一个线程里可含有一个Looper对象以及一个MessageQueue数据结构。在你的应用程序里，可以定义Handler的子类别来接收Looper所送出的消息。  
   Looper实际上就是消息队列+消息循环的封装。  
   Handler可以被看做Looper的接口，用来向指定的Looper发送消息以及定义处理方法。  
@@ -133,7 +133,7 @@ summary:
   可以看到取下一个message时会判断时间，如果队列中没有消息或者第一个待处理的消息时机未到，且也没有其他利用队列空闲要处理的事务，则将队列设置为设置 blocked 状态，进入等待状态；否则就利用队列空闲处理其它事务。  
   enqueueMessage会根据when把新入的message放在合适的位置；removeMessage会遍历整条queue移除符合要求的message  
   *[reference](http://www.cnblogs.com/kesalin/p/android_messagequeue.html)*
-  
+
 ##3. Binder&&IPC的实现原理
 binder其实不是android首先提出来的IPC机制，它是基于OpenBinder来实现的。OpenBinder有许可问题，andriod不能直接使用，故此重新开发了自己的一套binder实现，基于宽松的Apache协议发布，架构与OpenBinder类似，相关信息可以参考: [http://www.open-binder.org](http://www.open-binder.org)。  
 这个问题还没有研究透彻，先留下一个[reference](http://blog.csdn.net/universus/article/details/6211589)
