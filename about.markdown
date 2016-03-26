@@ -5,15 +5,16 @@ layout: page
 
 an
 
-> IE Student in CUHK / Android developer / Geek
+> IE Student in CUHK / Android developer / Geek  
+> [Resume](media/files/resume.pdf) [简历](media/files/简历.pdf)
 
-who involved in 
+who involved in
 
 > [github](https://github.com/grayy921013)  
 > [stackoverflow](http://stackoverflow.com/users/3724518/vincentzhou)  
 > [v2ex](http://www.v2ex.com/member/VincentZhou)
 
-mail 
+mail
 
 > [grayy921013@gmail.com](mailto:grayy921013@gmail.com)
 
