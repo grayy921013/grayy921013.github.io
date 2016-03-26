@@ -1,8 +1,7 @@
 markdown: rdiscount
 highlighter: pygments
 permalink: /:year/:month/:day/:title.html
-name: "No Name Yet"
-markdown: rdiscount
+name: "Vincent's blog"
 
 author: "vincent"
 atom-baseurl: "http://grayy921013.github.io/"
@@ -21,4 +20,3 @@ navigations:
   - title: Subscribe
     class: fa fa-rss
     href: /atom.xml
-
