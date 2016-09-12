@@ -5,8 +5,8 @@ layout: page
 
 an
 
-> IE Student in CUHK / Android developer / Geek  
-> [Resume](media/files/resume.pdf) [简历](media/files/简历.pdf)
+> INI Student at CMU / Android developer / Geek  
+> [Resume](media/files/resume.pdf)
 
 who involved in
 
